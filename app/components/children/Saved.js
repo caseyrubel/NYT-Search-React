@@ -3,8 +3,10 @@ var React = require('react');
 class Search extends React.Component {
     render() {
         return(
-            <div className="page-header" role="navigation">
-                
+            <div className="penel panel-default">
+                <div className="page-body">
+                    asdf
+                </div>
             </div>
                 
         );

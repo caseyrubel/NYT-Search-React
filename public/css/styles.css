@@ -1,11 +1,6 @@
 * {
     font-family: 'Work Sans', sans-serif;
-}
-
-.group:after {
-    content: "";
-    display: table;
-    clear: both;
+    color: #337ab7;
 }
 
 .title {
@@ -15,4 +10,27 @@
 .page-header {
     background-color: transparent;
     border-color: transparent;
+    margin-top: 0;
+}
+
+.panel-default {
+    margin-left: 15%;
+    margin-right: 15%;
+    border: 0;
+}
+
+input {
+    margin-bottom: 3%;
+}
+
+.btn-info {
+    background-color: #337ab7;
+}
+
+.body {
+    min-height: calc(100vh - 50px);
+}
+
+footer {
+    height: 30px;
 }
