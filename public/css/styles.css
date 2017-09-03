@@ -1,0 +1,18 @@
+* {
+    font-family: 'Work Sans', sans-serif;
+}
+
+.group:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.title {
+    font-size: 35px;
+}
+
+.page-header {
+    background-color: transparent;
+    border-color: transparent;
+}
