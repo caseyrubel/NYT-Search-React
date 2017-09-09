@@ -1,7 +1,7 @@
-var React = require('react');
-var Query = require('./GrandChildren/Query')
+import React, { Component } from 'react';
+import Query from './GrandChildren/Query'
 
-class Search extends React.Component {
+class Search extends Component {
     render() {
         return(
             <div className="panel panel-default">

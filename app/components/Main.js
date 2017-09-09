@@ -1,17 +1,16 @@
-import React from "react";
+import React, { Component } from 'react';
+import { Link } from "react-router-dom";
+import Header from './Header';
+import Footer from './Footer';
 
-var Header = require('./Header');
-var Footer = require('./Footer');
-var Search = require('./children/Search');
-
-class Main extends React.Component {
+class Main extends Component {
     render() {
         return (
             <div>
+                <Header />
                 <div className="body">
-                    <Header />
                     <div className="row">
-                        <Search />
+                        {this.props.children}
                     </div>
                 </div>
                 <Footer />
