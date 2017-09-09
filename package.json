@@ -22,6 +22,7 @@
     "body-parser": "^1.17.2",
     "express": "^4.15.4",
     "express-router": "0.0.1",
+    "moment": "^2.18.1",
     "mongoose": "^4.11.9",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",

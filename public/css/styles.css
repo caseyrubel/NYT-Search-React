@@ -28,7 +28,7 @@ input {
 }
 
 .body {
-    min-height: calc(100vh - 50px);
+    min-height: calc(90vh - 70px);
 }
 
 footer {

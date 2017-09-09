@@ -1,28 +1,62 @@
 import React, { Component } from 'react';
+import helpers from "../../../utils/helpers";
 
 class Query extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+          term: "",
+          startYr: "",
+          endYr: ""
+        };
+        this.handleChange = this.handleChange.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
+      }
+      handleChange(event) {
+        var newState = {};
+        newState[event.target.id] = event.target.value;
+        this.setState(newState);
+      }
+      handleSubmit(event) {
+        event.preventDefault();
+        this.props.runQuery(this.state.term, this.state.startYr, this.state.endYr);
+      }
     render() {
         return(
             <div className="query text-center">
                 <form>
                     <input
-                        type="text"
-                        id="term"
                         className="form-control"
-                        placeholder="Search Term"
+                        id="term"
+                        ref="term"
+                        type="text"
+                        value={this.state.term}
+                        onChange={this.handleChange}
                         required
                     />
                     <input
-                        type="number"
-                        id="begin"
                         className="form-control"
-                        placeholder="Begin Year"
+                        id="startYr"
+                        ref="startYr"
+                        type="number"
+                        min="1970"
+                        max="2017"
+                        step="1"
+                        value={this.state.startYr}
+                        onChange={this.handleChange}
+                        required
                     />
                     <input
-                        id="end"
                         className="form-control"
-                        placeholder="End Year"
+                        id="endYr"
+                        ref="endYr"
                         type="number"
+                        min="1970"
+                        max="2017"
+                        step="1"
+                        value={this.state.endYr}
+                        onChange={this.handleChange}
+                        required
                     />
                     <button type="submit" className="search-button btn btn-info center-block">Search</button>
                 </form>

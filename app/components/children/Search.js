@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import Query from './GrandChildren/Query'
+import Query from './GrandChildren/Query';
+import helpers from "../../utils/helpers";
 
 class Search extends Component {
     render() {
