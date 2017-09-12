@@ -24,8 +24,9 @@ class Query extends Component {
     render() {
         return(
             <div className="query text-center">
-                <form>
+                <form onSubmit={this.handleSubmit}>
                     <input
+                        placeholder="Search Term"
                         className="form-control"
                         id="term"
                         ref="term"
@@ -35,6 +36,7 @@ class Query extends Component {
                         required
                     />
                     <input
+                        placeholder="Begin Year"
                         className="form-control"
                         id="startYr"
                         ref="startYr"
@@ -47,6 +49,7 @@ class Query extends Component {
                         required
                     />
                     <input
+                        placeholder="End Year"
                         className="form-control"
                         id="endYr"
                         ref="endYr"

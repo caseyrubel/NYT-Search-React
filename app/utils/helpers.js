@@ -6,10 +6,10 @@ var apikey = "0437c28d785848028738af22ab9d1e6e";
 
 const helpers = {
 
-    runQuery: function(topic, startYr, endYr) {
+    runQuery: function(term, startYr, endYr) {
         
         // cleans up format of search terms
-        var q = topic.trim();
+        var q = term.trim();
         var begin_date = startYr.trim() + "0101";
         var end_date = endYr.trim() + "1231";
 
@@ -44,10 +44,10 @@ const helpers = {
     saveArticle: function(article) {
         return axios.post('/api/saved', {
             // formats nyt api data to store in db
-            article_id: article._id,
+            articleID: article._id,
             title: article.headline.main,
             url: article.web_url,
-            pub_date: article.pub_date
+            date: article.pub_date
         }).then(function(res) {
             console.log("Article Saved " + " : " + res.data.article_id);
         }).catch(function(err) {
