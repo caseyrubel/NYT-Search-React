@@ -14,7 +14,7 @@ class Header extends Component {
                     <div className="collapse navbar-collapse navbar-ex1-collapse">
                         <ul className="nav navbar-nav navbar-right">
                             <li>
-                                <Link to="/">Search</Link>
+                                <Link to="/search">Search</Link>
                             </li>
                             <li>
                                 <Link to="/saved">Saved Articles</Link>

@@ -23,10 +23,10 @@ router.get("/api/saved", function(req, res) {
 // This is the route we will send POST requests to save each article.
 router.post("/api/saved", function(req, res) {
   var NewSave = new Article({
-  articleID: req.body.article_id,
+  articleID: req.body.articleID,
   title: req.body.title,
   url: req.body.url,
-  date: req.body.pub_date
+  date: req.body.date
 });
 
 //Check if Article already exists
@@ -47,7 +47,7 @@ Article.find({article_id: req.body.article_id}, function(err, doc) {
 
 router.delete("/api/saved", function(req, res) {
   Article.findOneAndRemove({
-    article_id: req.body.article_id}, function(err, doc) {
+    articleID: req.body.articleID}, function(err, doc) {
     if (err) {
       console.log(err);
     }

@@ -26,15 +26,26 @@ app.use('/', routes);
 // Determine whether to use local or remote database connection.
 var connectionString;
 
-if (process.env.PORT) {
-    connectionString = 'mongodb://heroku_xx1t24b1:c75mgtit829o1aso66k2fo1cbp@ds123084.mlab.com:23084/heroku_xx1t24b1';
-} else {
-    connectionString = 'mongodb://localhost/nytreact';
-}
 
-// Start listening.
-mongoose.connect(connectionString).then(function() {
-    app.listen(PORT, function() {
-        console.log('listening on port ' + PORT);
-    })
+mongoose.connect('mongodb://heroku_xx1t24b1:c75mgtit829o1aso66k2fo1cbp@ds123084.mlab.com:23084/heroku_xx1t24b1', {
+    useMongoClient: true
+  });
+
+var db = mongoose.connection;
+
+db.on("error", function(error) {
+    console.log("Mongoose Error: ", error);
+  });
+  
+// Once logged in to the db through mongoose, log a success message
+db.once("open", function() {
+    console.log("Mongoose connection successful.");
+});
+  
+
+var port = process.env.PORT || 3000;
+// Listen on port 3000
+
+app.listen(port, function() {
+  console.log("App running on port 3000!");
 });
