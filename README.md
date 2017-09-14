@@ -16,7 +16,7 @@ All of the data in this app persists through the MongoLab database heroku add-on
 
 ### Demo
 
-![app](https://gfycat.com/VengefulSadBluefish)
+https://gfycat.com/VengefulSadBluefish
 
 #### Contributors:
 ***
