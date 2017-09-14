@@ -18,6 +18,7 @@ All of the data in this app persists through the MongoLab database heroku add-on
 ***
 
 ![Alt Text](https://thumbs.gfycat.com/VengefulSadBluefish-size_restricted.gif)
+https://gfycat.com/VengefulSadBluefish
 
 #### Contributors:
 ***
