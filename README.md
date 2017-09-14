@@ -17,7 +17,7 @@ All of the data in this app persists through the MongoLab database heroku add-on
 #### Demo
 ***
 
-<div style='position:relative;padding-bottom:54%'><a src='https://gfycat.com/ifr/VengefulSadBluefish' frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0' allowfullscreen></a></div>
+![Alt Text](https://thumbs.gfycat.com/VengefulSadBluefish-size_restricted.gif)
 
 #### Contributors:
 ***
