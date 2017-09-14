@@ -30,7 +30,7 @@ router.post("/api/saved", function(req, res) {
 });
 
 //Check if Article already exists
-Article.find({article_id: req.body.article_id}, function(err, doc) {
+Article.find({articleID: req.body.articleID}, function(err, doc) {
     if (doc.length === 0) {
       NewSave.save(function(err, doc) {
         if (err) {

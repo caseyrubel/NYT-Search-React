@@ -34,7 +34,6 @@ const helpers = {
         return axios.get(
             '/api/saved'
         ).then(function(res) {
-            console.log("Retrieving All Saved Articles" + " : " + res.data.length + " articles!");
             return res
         }).catch(function(err) {
             console.log(err);

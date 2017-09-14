@@ -1,7 +1,8 @@
 import React from 'react';
 import {
   BrowserRouter as Router,
-  Route
+  Route,
+  Switch
 } from 'react-router-dom';
 
 import Main from "../components/Main";
@@ -12,11 +13,11 @@ import Home from "../components/children/Home";
 const Routes = (props) => (
   <Router {...props}>
     <Main>
-
-      <Route exact path="/" component={Home} />
-      <Route path="/search" component={Search} />
-      <Route path="/saved" component={Saved} />
-
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/search" component={Search} />
+        <Route exact path="/saved" component={Saved} />
+      </Switch>
     </Main>
   </Router>
 );
