@@ -2,6 +2,7 @@
 
 Link to the deployed Heroku application: https://calm-coast-21279.herokuapp.com
 
+
 ## Description
 ***
 This repository is a full MERN stack application that enables the user to: 
@@ -13,6 +14,9 @@ This repository is a full MERN stack application that enables the user to:
 
 All of the data in this app persists through the MongoLab database heroku add-on. 
 
+### Demo
+
+![app](https://gfycat.com/VengefulSadBluefish)
 
 #### Contributors:
 ***
@@ -28,4 +32,3 @@ Casey Rubel [GitHub](https://github.com/caseyrubel)
 * React.js
 * Mongo/Mongoose
 * Bootstrap
-* Cheerio
