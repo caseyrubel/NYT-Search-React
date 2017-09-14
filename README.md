@@ -14,9 +14,10 @@ This repository is a full MERN stack application that enables the user to:
 
 All of the data in this app persists through the MongoLab database heroku add-on. 
 
-### Demo
+#### Demo
+***
 
-https://gfycat.com/VengefulSadBluefish
+<iframe src='https://gfycat.com/ifr/VengefulSadBluefish' frameborder='0' scrolling='no' width='1112' height='774' allowfullscreen></iframe>
 
 #### Contributors:
 ***
